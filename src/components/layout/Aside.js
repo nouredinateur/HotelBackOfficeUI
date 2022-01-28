@@ -6,7 +6,7 @@ import Logo from "./logo.svg"
 function Aside() {
   return(
       <aside className="flex flex-col justify-center w-2/12 pb-6 pt-4 h-screen bg-white border-r-2 border-gray">
-          <div className="w-full h-full flex flex-col content-center	 py-6">
+          <div className="w-full h-full flex flex-col content-center py-6">
               <div className="mb-16">
                 <img src={Logo} alt="logo" className="w-full h-16" />
               </div>

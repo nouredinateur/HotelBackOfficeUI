@@ -1,6 +1,5 @@
 import './App.css';
 import Aside from './components/layout/Aside';
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Customers from './components/customer/Customer';
 import Reservation from './components/reservation/Reservation';
