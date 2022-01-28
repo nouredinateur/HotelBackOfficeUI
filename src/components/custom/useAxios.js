@@ -1,31 +1,27 @@
 import axios from "axios";
+let api = `${process.env.REACT_APP_API_URL}/`;
 
 export const getData = async (path) => {
-    let url = `${process.env.REACT_APP_API_URL}/${path}`;
-    const response = await axios.get(url);
+    const response = await axios.get(`${api}/${path}`);
     return response.data;
 }
 
 export const showData = async (path) => {
-    let url = `${process.env.REACT_APP_API_URL}/${path}`;
-    const response = await axios.get(url);
+    const response = await axios.get(`${api}/${path}`);
     return response.data;
 }
 
 export const postData = async (path, data) => {
-    let url = `${process.env.REACT_APP_API_URL}/${path}`;
-    const response = await axios.post(url, data);
+    const response = await axios.post(`${api}/${path}`, data);
     return response.data;
 }
 
 export const putData = async (path, data) => {
-    let url = `${process.env.REACT_APP_API_URL}/${path}`;
-    const response = await axios.put(url, data);
+    const response = await axios.put(`${api}/${path}`, data);
     return response.data;
 }
 
 export const deleteData = async (path) => {
-    let url = `${process.env.REACT_APP_API_URL}/${path}`;
-    const response = await axios.delete(url);
+    const response = await axios.delete(`${api}/${path}`);
     return response.data;
 }

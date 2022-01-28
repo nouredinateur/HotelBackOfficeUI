@@ -28,7 +28,7 @@ function Rooms() {
         <div className="flex flex-col justify-center text-black p-8 h-full w-10/12">
             <div className="flex flex-row basis-1/4 w-12/12">
                 <Search value={searchTerm} onSearch={handleSearch} />
-            <div className="basis-2/4">
+            <div className="basis-2/4 ">
                <div className="shadow-md rounded-lg pl-4 py-8">
                     <Add />
                </div>
